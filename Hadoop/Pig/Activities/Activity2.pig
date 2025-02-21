@@ -7,6 +7,6 @@ grpd = GROUP words BY word;
 -- Count the occurence of each word (Reduce)
 cntd = FOREACH grpd GENERATE $0 AS word, COUNT($1) AS no_of_lines;
 -- To remove the old output folder
-rmf hdfs:///user/haripriya/results;
+rmf hdfs:///user/Geethap/results;
 -- Store the result in HDFS
 STORE cntd INTO 'hdfs:///user/Geethap/results';
