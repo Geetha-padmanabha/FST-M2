@@ -9,4 +9,4 @@ cntd = FOREACH grpd GENERATE $0 AS word, COUNT($1) AS no_of_lines;
 -- To remove the old output folder
 rmf hdfs:///user/haripriya/results;
 -- Store the result in HDFS
-STORE cntd INTO 'hdfs:///user/haripriya/results';
+STORE cntd INTO 'hdfs:///user/Geethap/results';
