@@ -7,6 +7,6 @@ services:
   node-app:
     restart: always
     build: .
-    image: docker.io/niteshpanda/visits
+    image: docker.io/geethapadmanbha89/visits
     ports:
       - "8081:8081"
